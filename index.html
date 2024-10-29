@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Talent Bridge</title>
+
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #4984b8;">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Talent Bridge</a>
+            </a>
+          </div>
+        </nav>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Sobre Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="formulario.html">Quejas y Sugerencias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="registro_cliente.html">Registrate</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contactco">Contacto</a>
+            </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login_admin.html">Iniciar Sesión</a>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead text-white text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h1 class="mt-3">Bienvenid@s a Talent Bridge</h1>
+            <p class="lead">¡Estamos emocionados de presentarte nuestras últimas novedades en moda y estilo! Explora nuestra página web para explorar lo más nuevo en tendencias, colecciones exclusivas y más.</p>
+            <div class="d-grid gap-2 d-md-block">
+              <a class="nav-link btn btn-light btn-auto" href="registro_cliente.html">Únete a nosotros</a>
+              <img src="../Imagenes/human-resources-management.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-5" style="background-color: #639cca;">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2>Sobre Nosotros</h2>
+            <p>En el sur de Chile, los paisajes deslumbran con su belleza natural y su riqueza en biodiversidad. 
+              Imagina un vasto valle verde salpicado de flores silvestres, rodeado por montañas imponentes cubiertas 
+              de frondosos bosques de alerces y coigües. Los ríos de aguas cristalinas serpentean a través del valle, 
+              alimentando lagos serenos que reflejan el cielo azul y las nubes esponjosas. En el horizonte, 
+              los volcanes nevados se alzan majestuosos, vigilando la tierra con su imponente presencia. 
+              La fauna local, compuesta por cóndores, ciervos y pumas, se mueve libremente en este paraíso natural, 
+              creando un ambiente de paz y armonía.</p>
+          </div>
+          <div class="col-lg-6">
+            <img src="../Imagenes/services6.jpg" class="img-fluid" alt="Sobre Nosotros">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Servicios</h2>
+        <div id="servicesCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card mb-4 h-100">
+                    <img src="../Imagenes/sevices1.jpg" class="card-img-top" alt="Servicio 1">
+                    <div class="card-body">
+                      <h5 class="card-title">Expediciones de Aventura</h5>
+                      <p class="card-text">Descubre paisajes impresionantes y vive la adrenalina con nuestras expediciones de aventura, que incluyen caminatas, escalada y deportes extremos.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card mb-4 h-100">
+                    <img src="../Imagenes/services2.jpg" class="card-img-top" alt="Servicio 2">
+                    <div class="card-body">
+                      <h5 class="card-title">Mas cultura</h5>
+                      <p class="card-text">Sumérgete en la historia y la cultura local con nuestros recorridos culturales, visitando museos, sitios históricos y participando en actividades tradicionales.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card mb-4 h-100">
+                    <img src="../Imagenes/services3.jpg" class="card-img-top" alt="Servicio 3">
+                    <div class="card-body">
+                      <h5 class="card-title">Relajate con nosotros...</h5>
+                      <p class="card-text">Relájate y rejuvenece en nuestras escapadas de bienestar, que incluyen spa, yoga y retiros de meditación en entornos tranquilos.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card mb-4 h-100">
+                    <img src="../Imagenes/services4.jpg" class="card-img-top" alt="Servicio 4">
+                    <div class="card-body">
+                      <h5 class="card-title">Conecta con la naturaleza</h5>
+                      <p class="card-text">Explora la naturaleza con nuestras expediciones de aventura, que incluyen safaris, observación de fauna y flora, y excursiones por parques nacionales.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card mb-4 h-100">
+                    <img src="../Imagenes/services5.png" class="card-img-top" alt="Servicio 5">
+                    <div class="card-body">
+                      <h5 class="card-title">Viajes y Aventuras Marítimas</h5>
+                      <p class="card-text">Disfruta del mar con nuestros viajes y aventuras marítimas, que incluyen paseos en barco, snorkel y buceo.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card mb-4 h-100">
+                    <img src="../Imagenes/services6.jpg" class="card-img-top" alt="Servicio 6">
+                    <div class="card-body">
+                      <h5 class="card-title">Aventuras Culinarias</h5>
+                      <p class="card-text">Degusta lo mejor de la cocina local con nuestras aventuras culinarias, que incluyen tours de comida, clases de cocina y degustaciones de vinos.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#servicesCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#servicesCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5" style="background-color: #7db5dc;">
+      <div class="container">
+        <h2 class="text-center text-white mb-5">Contáctate con nosotros</h2>
+        <div class="row">
+          <div class="col-lg-4 ms-auto text-center mb-5 mb-lg-0">
+            <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
+            <div class="text-white">+56 9 3326 1660</div>
+          </div>
+          <div class="col-lg-4 me-auto text-center">
+            <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
+            <a class="d-block text-white" href="mailto:turismo@extremosur.com">turismo@extremosur.com</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+  </body>
+</html>
